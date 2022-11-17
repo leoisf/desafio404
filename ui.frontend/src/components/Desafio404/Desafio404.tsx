@@ -5,18 +5,24 @@ export interface Desafio404Props {
     title: string;
     text: string;
     button: string;
-    image: {src: string}
+    image: {src: string},
 
  } 
 
+export const Desafio404EditConfig = {
+
+   emptyLabel: "insira aqui um conteúdo",
+
+   isEmpty: (props: { text: any; }): boolean => !props || !props.text
+
+ }
+
  const Desafio404 = ({
 
-    title, text, button, image={src:""}
+    title, text, button, image={src:""},
 
  }: Desafio404Props ): JSX.Element => { 
    
-   console.log({image});
-
     return <div>
 
       <h1> {title} </h1>

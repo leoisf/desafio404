@@ -47,11 +47,17 @@ import {
     ListV2,ListV2IsEmptyFn
 } from '@adobe/aem-core-components-react-base';
 import Desafio404 from "./Desafio404/Desafio404";
+import Desafio404Footer from "./Desafio404Footer/Desafio404Footer";
+import Desafio404Header from "./Desafio404Header/Desafio404Header";
+
+import Desafio404EditConfig from "./Desafio404/Desafio404";
 
 //lazyload / code splitting example of an internal component
 const LazyTextComponent = withAsyncImport(() => import(`./Text/Text`));
 
 const desafio404 = withAsyncImport(() => import(`./Desafio404/Desafio404`));
+const desafio404header = withAsyncImport(() => import(`./Desafio404Header/Desafio404Header`));
+const desafio404footer = withAsyncImport(() => import(`./Desafio404Footer/Desafio404Footer`));
 
 
 //lazyload / code splitting examples of external components
@@ -69,7 +75,9 @@ MapTo('desafio404/components/image')(ImageV2, {isEmpty: ImageV2IsEmptyFn});
 MapTo('desafio404/components/title')(TitleV2, {isEmpty: TitleV2IsEmptyFn});
 
 
-MapTo('desafio404/components/desafio404')(Desafio404);
+MapTo('desafio404/components/desafio404')(Desafio404, Desafio404EditConfig);
+MapTo('desafio404/components/desafio404header')(Desafio404Header);
+MapTo('desafio404/components/desafio404footer')(Desafio404Footer);
 
 
 MapTo('desafio404/components/breadcrumb')(BreadCrumbV2, {isEmpty: BreadCrumbV2IsEmptyFn});

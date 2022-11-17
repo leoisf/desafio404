@@ -22,20 +22,24 @@
           xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
           xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
           jcr:primaryType="nt:unstructured"
-          jcr:title="Desafio 404 - header Design Dialog"
+          jcr:title="Desafio 404 - Header"
           sling:resourceType="cq/gui/components/authoring/dialog">
    <content jcr:primaryType="nt:unstructured"
             sling:resourceType="granite/ui/components/coral/foundation/container">
+      <layout jcr:primaryType="nt:unstructured"
+              margin="{Boolean}false"
+              sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
       <items jcr:primaryType="nt:unstructured">
-         <tabs jcr:primaryType="nt:unstructured"
-               maximized="{Boolean}true"
-               sling:resourceType="granite/ui/components/coral/foundation/tabs">
+         <column jcr:primaryType="nt:unstructured"
+                 sling:resourceType="granite/ui/components/coral/foundation/container">
             <items jcr:primaryType="nt:unstructured">
-               <styletab jcr:primaryType="nt:unstructured"
-                         path="/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_design/styletab"
-                         sling:resourceType="granite/ui/components/coral/foundation/include"/>
+               <title cq-msm-lockable="./title"
+                      jcr:primaryType="nt:unstructured"
+                      name="./title"
+                       fieldLabel="Title"
+                      sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
             </items>
-         </tabs>
+         </column>
       </items>
    </content>
 </jcr:root>

@@ -1,0 +1,39 @@
+{
+  "project-settings": {
+    "code-owner": "Desafio 404",
+    "bundle-path": "../core/src/main/java",
+    "test-path": "../core/src/test/java",
+    "apps-path": "../ui.apps/src/main/content/jcr_root/apps",
+    "component-path": "desafio404",
+    "model-interface-pkg": "com.desafio404.core.models",
+    "model-impl-pkg": "com.desafio404.core.models.impl"
+  },
+  "name": "desafio404header",
+  "title": "Desafio 404 - Header",
+  "group": "Desafio 404 - Content",
+  "type": "components",
+  "options": {
+    "js": false,
+    "jstxt": false,
+    "css": false,
+    "csstxt": false,
+    "html": false,
+    "html-content": false,
+    "slingmodel": true,
+    "testclass": false,
+    "junit-major-version": 5,
+    "content-exporter": true,
+    "model-adaptables": [
+      "request"
+    ],
+    "generic-javadoc": false,
+    "properties": [
+      {
+        "field": "title",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "text"
+      }
+    ]
+  }
+}

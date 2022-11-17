@@ -1,0 +1,89 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    /* ---------- Maven All ---------- */
+    {
+      "label": "Build All",
+      "type": "shell",
+      "group": "build",
+      "presentation": {
+        "panel": "shared",
+        "clear": true
+      },
+      "command": "mvn clean install -PautoInstallSinglePackage",
+      "problemMatcher": []
+    },
+    /* ---------- Maven Core ---------- */
+    {
+      "label": "Build core",
+      "type": "shell",
+      "group": "build",
+      "presentation": {
+        "panel": "shared",
+        "clear": true
+      },
+      "command": "cd core && mvn clean install -PautoInstallBundle",
+      "problemMatcher": []
+    },
+    /* ---------- Maven ui.apps ---------- */
+    {
+      "label": "Build ui.apps",
+      "type": "shell",
+      "group": "build",
+      "presentation": {
+        "panel": "shared",
+        "clear": true
+      },
+      "command": "cd ui.apps && mvn clean install -PautoInstallPackage",
+      "problemMatcher": []
+    },
+    /* ---------- Maven ui.frontend ---------- */
+    {
+      "label": "Build ui.frontend",
+      "type": "shell",
+      "group": "build",
+      "presentation": {
+        "panel": "shared",
+        "clear": true
+      },
+      "command": "cd ui.frontend && mvn clean install -PautoInstallPackage",
+      "problemMatcher": []
+    },
+    /* ---------- Maven Clean ---------- */
+    {
+      "label": "Clean Project",
+      "type": "shell",
+      "group": "build",
+      "presentation": {
+        "panel": "shared",
+        "clear": true
+      },
+      "command": "mvn clean",
+      "problemMatcher": []
+    },
+    /* ---------- React tests ---------- */
+    {
+      "label": "Run Tests",
+      "type": "shell",
+      "command": "cd ui.frontend && npm run test",
+      "group": "test",
+      "presentation": {
+        "panel": "new",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    /* ---------- Devserver ---------- */
+    {
+      "label": "Run Devserver",
+      "type": "shell",
+      "presentation": {
+        "panel": "new",
+        "reveal": "silent",
+        "clear": true
+      },
+      "command": "cd ui.frontend && npm start",
+      "problemMatcher": []
+    }
+  ]
+}

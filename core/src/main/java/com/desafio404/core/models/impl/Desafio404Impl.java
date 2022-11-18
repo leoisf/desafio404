@@ -18,6 +18,7 @@
 
 package com.desafio404.core.models.impl;
 
+import com.adobe.acs.commons.models.injectors.annotation.ChildResourceFromRequest;
 import com.adobe.cq.export.json.ComponentExporter;
 import com.adobe.cq.export.json.ExporterConstants;
 import com.adobe.cq.wcm.core.components.models.Image;
@@ -27,7 +28,6 @@ import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Exporter;
 import org.apache.sling.models.annotations.Model;
-import org.apache.sling.models.annotations.injectorspecific.ChildResource;
 import org.apache.sling.models.annotations.injectorspecific.InjectionStrategy;
 import org.apache.sling.models.annotations.injectorspecific.SlingObject;
 import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
@@ -49,7 +49,7 @@ public class Desafio404Impl
     private String text;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String button;
-    @ChildResource(injectionStrategy = InjectionStrategy.OPTIONAL)
+    @ChildResourceFromRequest(injectionStrategy = InjectionStrategy.OPTIONAL)
     private Image image;
     @SlingObject
     private Resource resource;

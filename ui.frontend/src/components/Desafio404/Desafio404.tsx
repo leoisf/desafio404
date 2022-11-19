@@ -1,4 +1,5 @@
 import React  from "react"
+import { Wrapper } from "./Desafio404.styled";
 
 export interface Desafio404Props {
 
@@ -23,17 +24,12 @@ export const Desafio404EditConfig = {
 
  }: Desafio404Props ): JSX.Element => { 
    
-    return <div>
-
+    return <Wrapper>
       <h1> {title} </h1>
-
       <p> {text} </p>
-
       <button> {button} </button>
-
       <img src={image.src}/>
-
-    </div> ;
+    </Wrapper> ;
 
  }
 

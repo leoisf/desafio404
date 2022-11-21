@@ -47,7 +47,7 @@ public class Desafio404footerImpl
     private Resource resource;
 
     @Override
-    @JsonProperty("text")
+    @JsonProperty("title")
     public String getTitle() {
         return title;
     }

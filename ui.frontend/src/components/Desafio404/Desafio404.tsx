@@ -1,5 +1,5 @@
 import React  from "react"
-import { Wrapper } from "./Desafio404.styled";
+import { Wrapper, Image, H1, P, Button, WrapperInfo, GlobalStyle } from "./Desafio404.styled";
 
 export interface Desafio404Props {
 
@@ -24,13 +24,17 @@ export const Desafio404EditConfig = {
 
  }: Desafio404Props ): JSX.Element => { 
    
-    return <Wrapper>
-      <h1> {title} </h1>
-      <p> {text} </p>
-      <button> {button} </button>
-      <img src={image.src}/>
-    </Wrapper> ;
-
+    return<>
+    <GlobalStyle/>
+    <Wrapper>
+      <Image src={image.src}/>
+      <WrapperInfo>
+         <H1> {title} </H1>
+         <P> {text} </P>
+         <Button> {button} </Button>
+      </WrapperInfo>
+    </Wrapper>
+    </>
  }
 
  export default Desafio404;

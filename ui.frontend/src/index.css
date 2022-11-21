@@ -16,6 +16,8 @@
 
 /* Global styles */
 
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,700;1,400&display=swap');
+
 html,
 body {
   border: 0;
@@ -38,6 +40,6 @@ h5,
 p,
 .nav-container,
 .rw-box {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  font-family: 'Space Mono', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
   color: #000000;
 }

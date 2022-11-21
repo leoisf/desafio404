@@ -1,4 +1,6 @@
 import React  from "react"
+import { Span, Wrapper } from "./Desafio404Header.styled";
+
 
 export interface Desafio404HeaderProps {
 
@@ -11,17 +13,11 @@ export interface Desafio404HeaderProps {
     title,
 
  }: Desafio404HeaderProps ): JSX.Element => { 
-   
-   
     return <div>
-
-      <h1> header </h1>
-
-      <h2> {title} </h2>
-
-
+      <Wrapper>
+          <Span> {title} </Span>
+      </Wrapper>
     </div> ;
-
  }
 
  export default Desafio404Header;

@@ -1,4 +1,5 @@
 import React  from "react"
+import { Span, Wrapper } from "./Desafio404Footer.styled";
 
 export interface Desafio404FooterProps {
 
@@ -12,14 +13,12 @@ export interface Desafio404FooterProps {
 
  }: Desafio404FooterProps ): JSX.Element => { 
    
-   
-    return <div>
 
-      <h1> {title} </h1>
-
-      <h2> footer </h2>
-
-    </div> ;
+   return <div>
+   <Wrapper>
+       <Span> {title} </Span>
+   </Wrapper>
+ </div> ;
 
  }
 

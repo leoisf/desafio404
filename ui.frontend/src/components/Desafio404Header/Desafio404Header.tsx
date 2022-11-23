@@ -10,7 +10,7 @@ export interface Desafio404HeaderProps {
 
  const Desafio404Header = ({
 
-    title,
+   title="Insira um texto",
 
  }: Desafio404HeaderProps ): JSX.Element => { 
     return <div>

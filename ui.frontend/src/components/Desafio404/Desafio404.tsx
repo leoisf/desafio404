@@ -20,7 +20,7 @@ export const Desafio404EditConfig = {
 
  const Desafio404 = ({
 
-    title, text, button, image={src:""},
+    title="inseria um título", text="insira um texto", button="botão", image={src:""},
 
  }: Desafio404Props ): JSX.Element => { 
    

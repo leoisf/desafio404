@@ -9,7 +9,7 @@ export interface Desafio404FooterProps {
 
  const Desafio404Footer = ({
 
-    title,
+    title="Insira um texto",
 
  }: Desafio404FooterProps ): JSX.Element => { 
    

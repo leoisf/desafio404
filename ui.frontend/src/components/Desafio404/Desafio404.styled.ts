@@ -62,13 +62,12 @@ export const P = styled.p`
 `;
 
 export const Button = styled.button`
-  $gray_color = #333333;
   margin-top: 42px;
   font-size: 14px;
   width: 216px;
   height: 68px;
   color: white;
-  background: $gray_color;
+  background: #333333;
 `;
 
 export const WrapperInfo = styled.div`
